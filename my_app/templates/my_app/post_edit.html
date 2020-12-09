@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% load static %}
+ <head>
+ <title>Добавление записей в Lessons</title>
+ </head>
+ <body>
+ <h1>Новая запись в Lessons</h1>
+ <form method="POST" class="post-form">
+  {% csrf_token %}
+ {{ form.as_p }}
+ <button type="submit">Жмых</button>
+ </form>
+ </body>
